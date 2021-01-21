@@ -1,0 +1,19 @@
+{
+  "name": "ciblog",
+  "version": "1.0.0",
+  "description": "## What is CodeIgniter?",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "make-css": "tailwindcss build ./public/css/tailwind.css -o ./public/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.2.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
