@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class UserModel extends Migration
+class Biodata extends Migration
 {
 	public function up()
 	{
@@ -38,16 +38,20 @@ class UserModel extends Migration
 			'updated_at'         => [
 				'type'           => 'TIMESTAMP',
 				'null'           => true,
+			],
+			'deleted_at'         => [
+				'type'           => 'TIMESTAMP',
+				'null'           => true,
 			]
 		]);
 		$this->forge->addPrimaryKey('biodata_id');
-		$this->forge->createTable('biodata');
+		$this->forge->createTable('biodatas');
 	}
 
 	//--------------------------------------------------------------------
 
 	public function down()
 	{
-		$this->forge->dropTable('biodata');
+		$this->forge->dropTable('biodatas');
 	}
 }
