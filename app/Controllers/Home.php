@@ -20,11 +20,11 @@ class Home extends BaseController
 	public function dashboard()
 	{
 		$users = new UserModel();
-		$user = $users->getUsers();
+		$data = $users->getUsers();
 
 		$context = [
-			'title' => 'Dashboard',
-			'data' => $user
+			'title' => 'Panda | Dashboard',
+			'data' => $data
 		];
 
 		return view('pages/dashboard', $context);
